@@ -5,13 +5,13 @@
 const inputs = {
   min: 20,
   max: 80,
-  count: 8,
+  count: 7,
   decimals: 2,
   continuity: 1
 };
 
 const generateLabels = () => {
-  return Utils.months({count: inputs.count});
+  return Utils.days({count: inputs.count});
 };
 
 const generateData = () => (Utils.numbers(inputs));
